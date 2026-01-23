@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 var helloRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
-var hpRouter = require('./routes/hp');
+var foxRouter = require('./routes/fox');
 var bunniesRouter = require('./routes/bunnies');
 
 var app = express();
@@ -30,7 +30,7 @@ app.use('/users', usersRouter);
 app.use('/hello', helloRouter);
 app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
-app.use('/hp', hpRouter);
+app.use('/fox', foxRouter);
 app.use('/bunnies', bunniesRouter);
 
 
