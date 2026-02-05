@@ -11,6 +11,7 @@ var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
 var foxRouter = require('./routes/fox');
 var bunniesRouter = require('./routes/bunnies');
+var notes_from_bRouter = require('./routes/notes_from_b');
 
 var app = express();
 var PORT = 30044;
@@ -32,6 +33,7 @@ app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
 app.use('/fox', foxRouter);
 app.use('/bunnies', bunniesRouter);
+app.use('/notes_from_b', notes_from_bRouter);
 
 
 // catch 404 and forward to error handler
